@@ -16,7 +16,7 @@ https://github.com/GBvaillant/Ts-api-est-gio
 
 ## Start
 Para rodar o backend é preciso clonar tanto o FrontEnd quanto o BackEnd.
-### comandos para rodar o FrontEnd
+### Comandos para rodar o FrontEnd
 + yarn dev
 ou 
 + npm run dev
