@@ -1,8 +1,11 @@
-import { useState } from "react"
+import { useState} from "react"
 import axiosFetch from "../../axios/axiosConfig"
 import "./Form.css"
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
+
+    const navigate = useNavigate()
 
     const [razao, setRazao] = useState()
     const [end, setEnd] = useState()
@@ -26,6 +29,10 @@ const Form = () => {
         })
             .then((response) => {
                 console.log(response)
+                alert('Novo fornecedor criado')
+                navigate('/fornecedores')
+                
+
             })
             .catch((err) => {
                 console.log(err)
@@ -103,6 +110,7 @@ const Form = () => {
                         />
                     </div>
                         <button type="submit">Adicionar fornecedor</button>
+
                 </form>
 
             </div>

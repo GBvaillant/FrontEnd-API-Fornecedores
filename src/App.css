@@ -4,13 +4,12 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
   font-family: 'Open Sans', 'Sans-serif';
 
 }

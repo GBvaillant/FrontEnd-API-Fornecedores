@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams,useNavigate } from "react-router-dom"
 import axiosFetch from "../../axios/axiosConfig"
 
 const EditarDados = () => {
@@ -12,6 +12,7 @@ const EditarDados = () => {
     const [nome2, setNome2] = useState()
     const [email2, setEmail2] = useState()
 
+    const navigate = useNavigate()
     // setRazao('')
     // setEnd('')
     // setProduto('')
@@ -104,6 +105,7 @@ const EditarDados = () => {
         })
             .then((response) => {
                 console.log(response)
+                navigate('/fornecedores')
                 alert('Dados atualizados')
             })
             .catch((err) => {

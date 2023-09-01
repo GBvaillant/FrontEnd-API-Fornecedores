@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 import axiosFetch from "../../axios/axiosConfig"
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams, useNavigate } from "react-router-dom"
 import './FornecedorDetails.css'
 
 
 const FornecedorDetails = () => {
+
+    const navigate = useNavigate()
 
     const deletarFornecedor = async (id) => {
         await axiosFetch.delete(`/deletarfornecedor/${id}`, {
@@ -12,6 +14,8 @@ const FornecedorDetails = () => {
         })
             .then((response) => {
                 console.log(response)
+                alert('Fornecedor removido')
+                navigate('/fornecedores')
             })
             .catch((err) => {
                 console.log(err)
