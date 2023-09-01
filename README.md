@@ -16,6 +16,6 @@ https://github.com/GBvaillant/Ts-api-est-gio
 
 ## Start
 - Primeiramente instale as dependências do projeto com `yarn` ou `yarn install`
-- Após instalar as dependências é necessário configurar o backend para utilizar a aplicação integrada com a API. Siga os passos no [REPOSITÓRIO]https://github.com/GBvaillant/Ts-api-est-gio
+- Após instalar as dependências é necessário configurar o backend para utilizar a aplicação integrada com a API. Siga os passos em https://github.com/GBvaillant/Ts-api-est-gio
 - Após isso basta rodar a aplicação utilizando os comandos `yarn dev` ou `npm run dev`
 
