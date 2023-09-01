@@ -1,5 +1,5 @@
 ## Aplicação
-FrontEnd de uma sistema fullstack que consiste em controlar fornecedores de uma empresa.
+FrontEnd de uma sistema fullstack que consiste consumir uma API feita em typescript com a função de controlar fornecedores de uma empresa.
 
 ## Linguagem
 ReactJs 
