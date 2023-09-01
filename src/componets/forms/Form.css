@@ -1,0 +1,44 @@
+.form {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    float:none;
+
+}
+h2 { 
+    margin-bottom: 50px;
+}
+.form input {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    width: 350px;
+}
+
+.contatosForm input { 
+    margin-bottom: 20px;
+    margin-right: 30px;
+    
+    
+}
+button { 
+        background-color: #333;
+        color: #fff;
+        margin-top: 50px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 20vh;
+        font-size: medium;
+        margin-left: 40%;
+
+}
