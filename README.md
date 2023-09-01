@@ -1,10 +1,10 @@
 ## Aplicação
 FrontEnd de uma sistema fullstack que consiste em controlar fornecedores de uma empresa.
 
-## linguagem
+## Linguagem
 ReactJs 
 
-## telas
+## Telas
 + Lista de Fornecedores
 + Detalhes do fornecedor
 + Edição de Fornecedor
