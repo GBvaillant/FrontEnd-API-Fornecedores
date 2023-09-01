@@ -28,7 +28,7 @@ h2 {
     
     
 }
-button { 
+.form button { 
         background-color: #333;
         color: #fff;
         margin-top: 50px;
@@ -40,5 +40,4 @@ button {
         width: 20vh;
         font-size: medium;
         margin-left: 40%;
-
 }

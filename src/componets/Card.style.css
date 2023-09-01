@@ -6,7 +6,7 @@
     margin: 0.5%;
 }
 
-.card h4 {
+.card h3 {
     background-color: #222;
     color: #fff;
     padding: .4em;
@@ -18,9 +18,22 @@
     color: #222;
     margin-bottom: 1em;
     font-weight: bold;
-
 }
 
+.action p { 
+    float: right;
+    border-radius: 5px;
+    color: #222;
+    font-weight: bold;
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 5px;
+    
+}
+
+.action p:hover { 
+    background-color: #969494;
+}
 action svg {
     margin-right: .5em;
 }

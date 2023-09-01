@@ -1,15 +1,25 @@
 import { useEffect, useState } from "react"
 import axiosFetch from "../../axios/axiosConfig"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import './FornecedorDetails.css'
 
 
 const FornecedorDetails = () => {
 
+    const deletarFornecedor = async (id) => {
+        await axiosFetch.delete(`/deletarfornecedor/${id}`, {
+            id: id
+        })
+            .then((response) => {
+                console.log(response)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }
+
     const [fornecedor, setFornecedor] = useState([])
     const { id } = useParams()
-
-
 
     useEffect(() => {
         axiosFetch.get(`/listarfornecedor/${id}`)
@@ -23,7 +33,7 @@ const FornecedorDetails = () => {
             })
     }, [id])
     return (
-        <div className="container">
+        <div className="container" key={id}>
             <div className="detalhes">
                 <h1>{fornecedor.razao}</h1>
                 <div className="info">
@@ -39,8 +49,13 @@ const FornecedorDetails = () => {
                         <h4>E-mail: {fornecedor.email}</h4><br></br>
                         <h4>Nome: {fornecedor.nome2}</h4>
                         <h4>E-mail: {fornecedor.email2}</h4>
-                        
                     </div>
+                    <button onClick={() => deletarFornecedor(id)}>
+                        Excluir
+                    </button>
+                    <Link to={`editarDados/${id}`}>
+                        <button>Editar</button>
+                    </Link>
 
                 </div>
             </div>

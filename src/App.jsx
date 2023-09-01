@@ -5,6 +5,7 @@ import Navbar from './componets/Navbar'
 import Fornecedores from './componets/pages/fornecedores'
 import FornecedorDetails from './componets/pages/FornecedorDetails'
 import Form from './componets/forms/Form'
+import EditarDados from './componets/pages/EditarDados'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/fornecedores' element={<Fornecedores />} />
           <Route path='/detalhes/:id' element={<FornecedorDetails />} />
           <Route path='/formulario' element={<Form />} />
+          <Route path='/detalhes/:id/editarDados/:id' element={<EditarDados />} />
         </Routes>
       </div>
     </Router>
