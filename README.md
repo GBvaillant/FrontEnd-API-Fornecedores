@@ -11,13 +11,11 @@ ReactJs
 + Adicionar novo Fornecedor
 
 ## API 
-A aplicação consume uma api feita em TypeScript.
+A aplicação consume uma api feita em TypeScript, é necessário realizar a configuração e rodar ela para utilizar junto com o frontend. 
 https://github.com/GBvaillant/Ts-api-est-gio
 
 ## Start
-Para rodar o backend é preciso clonar tanto o FrontEnd quanto o BackEnd.
-### Comandos para rodar o FrontEnd
-+ yarn dev
-ou 
-+ npm run dev
+- Primeiramente instale as dependências do projeto com `yarn` ou `yarn install`
+- Após instalar as dependências é necessário configurar o backend para utilizar a aplicação integrada com a API. Siga os passos no [REPOSITÓRIO]https://github.com/GBvaillant/Ts-api-est-gio
+- Após isso basta rodar a aplicação utilizando os comandos `yarn dev` ou `npm run dev`
 
