@@ -1,8 +1,21 @@
-# React + Vite
+## Aplicação
+FrontEnd de uma sistema fullstack que consiste consumir uma API feita em typescript com a função de controlar fornecedores de uma empresa.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Linguagem
+ReactJs 
 
-Currently, two official plugins are available:
+## Telas
++ Lista de Fornecedores
++ Detalhes do fornecedor
++ Edição de Fornecedor
++ Adicionar novo Fornecedor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## API 
+A aplicação consume uma api feita em TypeScript, é necessário realizar a configuração e rodar ela para utilizar junto com o frontend. 
+https://github.com/GBvaillant/Ts-api-est-gio
+
+## Start
+- Primeiramente instale as dependências do projeto com `yarn` ou `yarn install`
+- Após instalar as dependências é necessário configurar o backend para utilizar a aplicação integrada com a API. Siga os passos em https://github.com/GBvaillant/Ts-api-est-gio
+- Após isso basta rodar a aplicação utilizando os comandos `yarn dev` ou `npm run dev`
+
