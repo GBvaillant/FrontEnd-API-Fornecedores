@@ -1,40 +1,49 @@
 .card {
-    padding: 1em;
-    border: 1px solid #222;
-    border-radius: 15px;
-    width: 280px;
-    margin: 0.5%;
-    margin-bottom: 50px;
-}
-
-.card h3 {
-    background-color: #222;
-    color: #fff;
-    padding: .4em;
-    margin-bottom: 1.3em;
-    border-radius: 10px;
-}
-
-.card p {
-    color: #222;
-    margin-bottom: 1em;
-    font-weight: bold;
-}
-
-.action p { 
-    float: right;
+    display: flex;
+    margin-left: 40px;
+    display: flex;
     border-radius: 5px;
-    color: #222;
-    font-weight: bold;
-    border: 1px solid #222;
-    border-radius: 15px;
-    padding: 5px;
-    
+    width: 100%;
+    height: auto;
+    margin: 0.5%;
+    margin-bottom: 30px;
 }
 
-.action p:hover { 
-    background-color: #969494;
+p {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    margin-right: 10px;
+    display: inline-block;
 }
-action svg {
-    margin-right: .5em;
+
+.razao {
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    border-top-left-radius: 10px;
+    text-align: start;
+
+}
+
+.produtos {
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    text-align: start;
+
+}
+
+.details {
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    text-align: center; 
+}
+.details p  {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+}
+.details p:hover { 
+    color: black;
 }

@@ -30,8 +30,23 @@ const Fornecedores = () => {
                 <div className="div2">
                     <h1>Fornecedores</h1>
                     <Link to={'/formulario'}>
-                        <button>Adicionar fornecedor</button>
+                        <button>Adicionar</button>
                     </Link>
+                </div>
+                <div className="div3">
+                <input type="text" placeholder="Pesquisar" />
+                </div>
+                <div className="titulos">
+                    <div className="fornecedor">
+                        <h3>Fornecedor</h3>
+                    </div>
+                    <div className="produto">
+                        <h3>Produto</h3>
+                    </div>
+                    <div className="descricao">
+                        <h3>Descrição</h3>
+                    </div>
+
                 </div>
                 <div className="cards">
                     {

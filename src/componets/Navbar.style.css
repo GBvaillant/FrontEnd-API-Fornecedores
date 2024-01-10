@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #222 ;
-    padding: 1em;
+    background: linear-gradient(90deg, rgba(155,255,252,1) 15%, rgba(0,186,190,1) 43%, rgba(0,167,194,1) 70%, rgba(0,99,255,1) 100%, rgba(134,123,62,1) 100%, rgba(106,97,50,1) 100%);
+    padding: 50px;
     font-family: 'Open Sans', 'Sans-serif';
     
     
@@ -12,11 +12,10 @@
     display: flex;
     list-style: none;
     align-items: center;
-
 }
 
 .item {
-    margin-right: 1em;
+    margin-right: 4em;
 }
 
 .item a {
