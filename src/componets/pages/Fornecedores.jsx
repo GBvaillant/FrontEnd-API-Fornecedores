@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import Card from "../Card"
 import axiosFetch from "../../axios/axiosConfig"
+import { IoMdSearch } from "react-icons/io";
 import "./Fornecedores.css"
 
 const Fornecedores = () => {
@@ -25,16 +26,16 @@ const Fornecedores = () => {
     }, [])
 
     return (
-        <div className="container">
-            <div>
+        <div className="container">    
                 <div className="div2">
                     <h1>Fornecedores</h1>
                     <Link to={'/formulario'}>
-                        <button>Adicionar</button>
+                        <button>Adicionar novo</button>
                     </Link>
                 </div>
                 <div className="div3">
-                <input type="text" placeholder="Pesquisar" />
+                <IoMdSearch className="lupa" />
+                <input className="pesquisar" type="text" placeholder="Pesquisar" />
                 </div>
                 <div className="titulos">
                     <div className="fornecedor">
@@ -61,7 +62,6 @@ const Fornecedores = () => {
                     }
                 </div>
 
-            </div>
         </div>
     )
 }

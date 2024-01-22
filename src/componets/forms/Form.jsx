@@ -1,4 +1,4 @@
-import { useState} from "react"
+import { useState } from "react"
 import axiosFetch from "../../axios/axiosConfig"
 import "./Form.css"
 import { useNavigate } from 'react-router-dom';
@@ -31,7 +31,7 @@ const Form = () => {
                 console.log(response)
                 alert('Novo fornecedor criado')
                 navigate('/fornecedores')
-                
+
 
             })
             .catch((err) => {
@@ -50,42 +50,45 @@ const Form = () => {
         <div className="conteiner">
             <div className="form">
                 <h2>Adicionar novo Fornecedor</h2>
-                <div>
-
-                </div>
                 <form onSubmit={(e) => handleSubmit(e)}>
-                    <input
-                        type="text"
-                        placeholder="Razão social"
-                        value={razao || ''}
-                        onChange={(e) => setRazao(e.target.value)}
-                        required
-                    /><br></br>
-                    <input
-                        type="text"
-                        placeholder="Endereço completo"
-                        value={end || ''}
-                        onChange={(e) => setEnd(e.target.value)}
-                        required
+                    <div className="form1">
+                    <label htmlFor="">Razão social da empresa: </label>
+                        <input
+                            type="text"
+                            placeholder="Razão social"
+                            value={razao || ''}
+                            onChange={(e) => setRazao(e.target.value)}
+                            required
+                        /><br></br>
+                        <label htmlFor="">Endereço completo: </label>
+                        <input
+                            type="text"
+                            placeholder="Endereço completo"
+                            value={end || ''}
+                            onChange={(e) => setEnd(e.target.value)}
+                            required
 
-                    /><br></br>
-                    <input
-                        type="text"
-                        placeholder="Produto"
-                        value={produto || ''}
-                        onChange={(e) => setProduto(e.target.value)}
-                        required
-
-                    /><br></br>
+                        /><br></br>
+                        <label htmlFor="">Produto fornecido: </label>
+                        <input
+                            type="text"
+                            placeholder="Produto"
+                            value={produto || ''}
+                            onChange={(e) => setProduto(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <br></br>
                     <div className="contatosForm">
+                    <label htmlFor="">Nome do responsável: </label>
                         <input
                             type="text"
                             placeholder="Nome de um responsável"
                             value={nome || ''}
                             onChange={(e) => SetNome(e.target.value)}
                             required
-
                         />
+                        {/* <label htmlFor="">Contato do responsável: </label> */}
                         <input
                             type="e-mail"
                             placeholder="E-mail"
@@ -94,6 +97,7 @@ const Form = () => {
                             required
 
                         /> <br></br>
+                        {/* <label htmlFor="">Nome de outro responsável (caso tenha): </label> */}
                         <input
                             type="text"
                             placeholder="Nome de outro responsável (Opcional)"
@@ -109,7 +113,7 @@ const Form = () => {
 
                         />
                     </div>
-                        <button type="submit">Adicionar fornecedor</button>
+                    <button type="submit">Adicionar fornecedor</button>
 
                 </form>
 

@@ -6,22 +6,10 @@ body {
 .container {
   text-align: center;
   background-color: #f8fceb;
-  max-width: 1000px;
+  max-width: 85%;
   display: flex;
   justify-content:space-between;
   margin: 10px;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  font-family: 'Open Sans', 'Sans-serif';
-  position:relative; /* Posiciona o conteúdo em relação à navbar */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px 0px 0px 0px; /* Adapte o espaçamento conforme necessário */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  /* Outros estilos do conteúdo conforme necessário */
-  
-
 }
 

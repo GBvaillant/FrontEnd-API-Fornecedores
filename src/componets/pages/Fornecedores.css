@@ -1,6 +1,5 @@
 .container {
   text-align: center;
-  
 }
 
 .div2 p {
@@ -23,16 +22,11 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  width: 20vh;
   font-size: medium;
   margin-left: 80%;
   margin-bottom: 50px;
 }
 
-
-.div2 p:hover {
-  background-color: #7e7e7e;
-}
 
 .cards {
   display: inline-block;
@@ -87,4 +81,27 @@ h1 {
   margin: 1px;
   border-top-right-radius: 10px;
   text-align: start;
+}
+
+.div3 { 
+  text-align: start;
+  display: inline block;
+}
+
+.pesquisar { 
+  padding: 10px 15px;
+  transition: 0.3s;
+  width:20%;
+  height: 5px;
+  margin-bottom: 25px;
+  border: none;
+}
+.lupa { 
+  margin-left: 50px;
+  height: auto;
+  width: auto;
+}
+
+.pesquisar:hover { 
+  border-color: #fff;
 }
